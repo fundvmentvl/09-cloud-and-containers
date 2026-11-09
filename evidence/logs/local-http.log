@@ -1,0 +1,13 @@
+Host verification 2026-11-09T01:54:29Z
+GET http://localhost:8080/api/appointments => HTTP 200
+[{"id":"SLOT-001","date":"2026-11-10","startTime":"09:00:00","endTime":"09:30:00"},{"id":"SLOT-002","date":"2026-11-10","startTime":"09:30:00","endTime":"10:00:00"},{"id":"SLOT-003","date":"2026-11-10","startTime":"10:00:00","endTime":"10:30:00"},{"id":"SLOT-004","date":"2026-11-10","startTime":"10:30:00","endTime":"11:00:00"}]
+POST http://localhost:8080/api/reservations => HTTP 201
+{"id":"2dbcc03c-a450-44a0-bd29-74cdf5904a7d","appointmentSlotId":"SLOT-001","customerName":"Assignment 9 Container Verification","createdAt":"2026-11-09T01:54:29.804205958"}
+GET http://localhost:8080/api/reservations/2dbcc03c-a450-44a0-bd29-74cdf5904a7d => HTTP 200
+{"id":"2dbcc03c-a450-44a0-bd29-74cdf5904a7d","appointmentSlotId":"SLOT-001","customerName":"Assignment 9 Container Verification","createdAt":"2026-11-09T01:54:29.804205958"}
+DELETE http://localhost:8080/api/reservations/2dbcc03c-a450-44a0-bd29-74cdf5904a7d => HTTP 204
+
+GET http://localhost:8080/api/appointments => HTTP 200
+[{"id":"SLOT-001","date":"2026-11-10","startTime":"09:00:00","endTime":"09:30:00"},{"id":"SLOT-002","date":"2026-11-10","startTime":"09:30:00","endTime":"10:00:00"},{"id":"SLOT-003","date":"2026-11-10","startTime":"10:00:00","endTime":"10:30:00"},{"id":"SLOT-004","date":"2026-11-10","startTime":"10:30:00","endTime":"11:00:00"}]
+ALL HTTP CHECKS PASSED
+Raw final response retained at /var/folders/kq/rfcvs6p90px4_gzwzg0g_bp40000gn/T//cen4025-http.UY92bi/body
