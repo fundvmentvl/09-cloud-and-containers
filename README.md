@@ -1,6 +1,6 @@
 # CEN4025 Assignment 9 Cloud and Containers
 
-Java 21 reservation API reused from Assignment 8. This project demonstrates a local container, two container configuration investigations and a free cloud deployment. The local image build passed all 13 tests. Host HTTP checks passed listing, creation, retrieval and cancellation. Both port-publication and storage-persistence investigations are complete. Cloud deployment is the remaining verification step.
+Java 21 reservation API reused from Assignment 8. This project demonstrates a local container, two container configuration investigations and a free cloud deployment. The local image build passed all 13 tests. Host HTTP checks passed listing, creation, retrieval and cancellation. Both port-publication and storage-persistence investigations are complete. The Render deployment also passed listing, creation, retrieval and cancellation checks.
 
 ## Prerequisites
 
@@ -48,3 +48,9 @@ docker run -d --name cen4025-a9 -p 127.0.0.1:8080:8080 --mount type=volume,sourc
 ```
 
 Use a free container name or stop and remove the existing test container first. Keep the named volume when replacing the container. Local evidence demonstrates that the booking disappears after replacement without a volume and survives replacement using the same volume.
+
+## Deployed service
+
+https://cen4025-reservation.onrender.com
+
+Verified with `bash scripts/verify-http.sh https://cen4025-reservation.onrender.com`; actual responses are in evidence/logs/cloud-http.log. Render uses Docker from main, repository-root Dockerfile, Free compute and health check /api/appointments. The captured HTTP listening port is 10000. Free storage is ephemeral; no cloud restart persistence test was performed.

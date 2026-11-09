@@ -1,6 +1,6 @@
 # Assignment 9 screenshot inventory
 
-All 11 execution screenshots supplied through November 8, 2026 at 9:26:40 PM Eastern are retained. Nine primary screenshots are embedded as Figures 1–9 in the local Word report; two Docker Desktop screenshots are retained as supporting evidence. Assignment instruction screenshots are references, not execution evidence.
+All 17 execution and configuration screenshots supplied through November 8, 2026 at 10:20:34 PM Eastern are retained. Twelve primary screenshots are embedded in the local Word report as Figures 1–11 and 13. Figure 12 presents an actual HTTP log excerpt. Five additional screenshots are retained as supporting evidence. Assignment instruction screenshots are references, not execution evidence.
 
 | Capture time Eastern | Screenshot | Report mapping | Demonstrates |
 |---|---|---|---|
@@ -16,4 +16,18 @@ All 11 execution screenshots supplied through November 8, 2026 at 9:26:40 PM Eas
 | 9:23:10 PM | [08-storage-volume-baseline.png](screenshots/08-storage-volume-baseline.png) | Figure 8 | Booking in named volume |
 | 9:26:40 PM | [09-storage-volume-survives-replacement.png](screenshots/09-storage-volume-survives-replacement.png) | Figure 9 | Booking survives replacement |
 
-Cloud settings, build/startup, and public API response screenshots are still pending. The working Word report is retained locally and excluded from Git.
+Cloud startup and public API response screenshots have now been collected. The working Word report is retained locally and excluded from Git.
+
+- November 8 at 9:53:24 PM Eastern: [10-support-health-check-dockerfile.png](screenshots/10-support-health-check-dockerfile.png) — Figure 10 configuration evidence: Health check /api/appointments and Dockerfile path ./Dockerfile.
+
+- November 8 at 9:53:47 PM Eastern: [10-cloud-free-plan.png](screenshots/10-cloud-free-plan.png) — Figure 10 configuration evidence: Free compute selection.
+
+- November 8 at 9:54:01 PM Eastern: [10-support-source-runtime-branch.png](screenshots/10-support-source-runtime-branch.png) — Figure 10 configuration evidence: Repository service name Docker runtime and main branch.
+
+- November 8 at 10:10:29 PM Eastern: [11-cloud-deployment-status.png](screenshots/11-cloud-deployment-status.png) — deployment revision 1a909b3, public URL, and TCP connection resets. Retained for deployment and issue discussion; full startup log capture remains pending.
+
+- November 8 at 10:12:00 PM Eastern: [13-cloud-http-verification.png](screenshots/13-cloud-http-verification.png) — Figure 13, actual public HTTPS listing, creation, retrieval, cancellation and restored availability. All checks passed.
+
+- November 8 at 10:20:34 PM Eastern: [11-cloud-tomcat-port-10000.png](screenshots/11-cloud-tomcat-port-10000.png) — Figure 11, Tomcat HTTP startup on port 10000 for revision 1a909b3.
+
+Final accounting: 17 supplied execution/configuration screenshots retained. Twelve are embedded screenshots (Figures 1–11 and 13); Figure 12 is an HTTP log excerpt. Five supporting screenshots are retained separately. All cloud execution captures are now collected.

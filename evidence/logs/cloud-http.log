@@ -1,0 +1,13 @@
+Host verification 2026-11-09T03:11:01Z
+GET https://cen4025-reservation.onrender.com/api/appointments => HTTP 200
+[{"id":"SLOT-001","date":"2026-11-10","startTime":"09:00:00","endTime":"09:30:00"},{"id":"SLOT-002","date":"2026-11-10","startTime":"09:30:00","endTime":"10:00:00"},{"id":"SLOT-003","date":"2026-11-10","startTime":"10:00:00","endTime":"10:30:00"},{"id":"SLOT-004","date":"2026-11-10","startTime":"10:30:00","endTime":"11:00:00"}]
+POST https://cen4025-reservation.onrender.com/api/reservations => HTTP 201
+{"id":"a40799fc-4861-420f-aaa5-35e6d076365e","appointmentSlotId":"SLOT-001","customerName":"Assignment 9 Container Verification","createdAt":"2026-11-09T03:10:38.881327515"}
+GET https://cen4025-reservation.onrender.com/api/reservations/a40799fc-4861-420f-aaa5-35e6d076365e => HTTP 200
+{"id":"a40799fc-4861-420f-aaa5-35e6d076365e","appointmentSlotId":"SLOT-001","customerName":"Assignment 9 Container Verification","createdAt":"2026-11-09T03:10:38.881327515"}
+DELETE https://cen4025-reservation.onrender.com/api/reservations/a40799fc-4861-420f-aaa5-35e6d076365e => HTTP 204
+
+GET https://cen4025-reservation.onrender.com/api/appointments => HTTP 200
+[{"id":"SLOT-001","date":"2026-11-10","startTime":"09:00:00","endTime":"09:30:00"},{"id":"SLOT-002","date":"2026-11-10","startTime":"09:30:00","endTime":"10:00:00"},{"id":"SLOT-003","date":"2026-11-10","startTime":"10:00:00","endTime":"10:30:00"},{"id":"SLOT-004","date":"2026-11-10","startTime":"10:30:00","endTime":"11:00:00"}]
+ALL HTTP CHECKS PASSED
+Raw final response retained at /var/folders/kq/rfcvs6p90px4_gzwzg0g_bp40000gn/T//cen4025-http.THhn70/body
