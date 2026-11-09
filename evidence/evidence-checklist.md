@@ -1,18 +1,18 @@
 # Assignment 9 evidence checklist
 
-Status: prepared only. No execution results have been collected.
+Status: local image build, HTTP verification, and both configuration investigations completed. Cloud deployment and the final comparison remain pending. See screenshot-inventory.md for all 11 captured screenshots.
 
 ## 2 Application and Containerization Evidence
-- [ ] Application requirements and Dockerfile explanation
-- [ ] Successful image build including Maven tests
-- [ ] Container startup and host HTTP access
-- [ ] At least two distinct application operations with actual responses
+- [x] Application requirements and Dockerfile explanation
+- [x] Successful image build including Maven tests
+- [x] Container startup and host HTTP access
+- [x] At least two distinct application operations with actual responses
 
 ## 3 Container Configuration Investigation Evidence
-- [ ] Port publication baseline modification observation and explanation
-- [ ] Container replacement without storage volume baseline and results
-- [ ] Container replacement with named volume and retrieval of same booking
-- [ ] Explain how container isolation differs from direct host execution
+- [x] Port publication baseline modification observation and explanation
+- [x] Container replacement without storage volume baseline and results
+- [x] Container replacement with named volume and retrieval of same booking
+- [x] Explain how container isolation differs from direct host execution
 
 ## 4 Cloud Deployment Evidence
 - [ ] Free plan account requirements and runtime support verified

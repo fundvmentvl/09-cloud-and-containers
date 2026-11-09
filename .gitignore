@@ -16,3 +16,6 @@ data/
 
 # Microsoft Word temporary lock files
 ~$*
+
+# Keep the working evidence report local
+evidence/Assignment_9_Evidence_Template.docx
